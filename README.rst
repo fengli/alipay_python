@@ -57,7 +57,7 @@ fork自这个版本 `alipay <https://github.com/yefei/python-alipay>`_. 增加�
   返回确认发货应该跳转的链接。
 
 测试接口 (payment/views.py)
-===============
+------------------
 
 * notify_url_handler (request): 支付宝异步通知的接口。验证并且根据交易状态更新订单。如果用户已经付款等待发货，调用确认发货接口。对应的ALIPAY_NOTIFY_URL设置应该是http://your_domain_name/notify_url
 
@@ -66,7 +66,7 @@ fork自这个版本 `alipay <https://github.com/yefei/python-alipay>`_. 增加�
 * upgrade_account (request, acc_type): 根据升级账户的类别ACC_TYPE创建账单。并且跳转至支付宝的付款接口(担保交易)。
 
 Bring to you by
-===========
+--------------------
 
 * `ikindle杂志订阅 <http://ikindle.mobi>`_:每天推送新鲜的报纸和杂志到你的Kindle.
 * `ikindle万卷书 <http://ikindle.mobi/book>`_: mobi格式和6寸pdf的图书共享站点，可以下载或者直接推送到你的Kindle。
