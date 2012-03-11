@@ -1,12 +1,14 @@
-alipay_python
+介绍
 ============
 
-Alipay_python 是支付宝接口的python版本。fork自这个版本 `alipay <https://github.com/yefei/python-alipay>`_. 增加了担保交易，确认发货和简单的测试站点。如果你在你的站点中使用了这个接口，可以告诉我们 ( okidogii@gmail.com )。
+alipay_python 是支付宝接口的python版本，提供了担保交易，即时到帐和自动发货的接口。
+
+fork自这个版本 `alipay <https://github.com/yefei/python-alipay>`_. 增加了担保交易，确认发货和简单的测试站点(django)。如果你在你的站点中使用了这个接口，可以考虑告诉我们 ( okidogii@gmail.com )。
 
 使用
 ---------
 * 下载解压到python_alipay目录
-* 修改alipay/config配置文件，根据你的支付宝帐号进行相应的设置
+* 修改alipay/config.py配置文件，根据你的支付宝帐号进行相应的设置
 * python manage.py syncdb
 * python manage.py runserver
 
@@ -60,3 +62,11 @@ Alipay_python 是支付宝接口的python版本。fork自这个版本 `alipay <h
 * notify_url_handler (request): 支付宝异步通知的接口。验证并且根据交易状态更新订单。如果用户已经付款等待发货，调用确认发货接口。对应的ALIPAY_NOTIFY_URL设置应该是http://your_domain_name/notify_url
 
 * return_url_handler (request): 支付宝同步通知的接口。验证并且根据交易状态更新订单。如果用户已经付款等待发货，调用确认发货接口。对应的ALIPAY_RETURN_URL设置应该是http://your_domain_name/return_url
+
+* upgrade_account (request, acc_type): 根据升级账户的类别ACC_TYPE创建账单。并且跳转至支付宝的付款接口(担保交易)。
+
+Bring to you by
+===========
+
+* `ikindle杂志订阅 <http://ikindle.mobi>`_:每天推送新鲜的报纸和杂志到你的Kindle.
+* `ikindle万卷书 <http://ikindle.mobi/book>`_: mobi格式和6寸pdf的图书共享站点，可以下载或者直接推送到你的Kindle。
