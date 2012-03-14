@@ -3,7 +3,7 @@
 
 alipay_python 是支付宝接口的python版本，提供了担保交易，即时到帐和自动发货的接口。
 
-fork自这个版本 `alipay <https://github.com/yefei/python-alipay>`_. 增加了担保交易，确认发货和简单的测试站点(django)。如果你在你的站点中使用了这个接口，可以考虑告诉我们 ( okidogii@gmail.com )。
+fork自这个版本 `alipay <https://github.com/yefei/python-alipay>`_. 增加了担保交易，确认发货和简单的测试站点(django)。如果你在你的站点中使用了这个接口，可以考虑告诉我们 ( okidogiii@gmail.com )。
 
 使用
 ---------
